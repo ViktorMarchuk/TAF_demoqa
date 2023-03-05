@@ -7,11 +7,8 @@ import org.openqa.selenium.WebElement;
 
 import java.util.ArrayList;
 import java.util.List;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 public class HomePage extends BasePage{
-    private final static Logger LOGGER = LogManager.getLogger();
     private String xpathButtonLogin = "//button[@id='login']";
     private String xpathFieldUserName = "//input[@id='userName']";
     private String xpathFieldPassword = "//input[@id='password']";

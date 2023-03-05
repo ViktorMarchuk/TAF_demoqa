@@ -3,8 +3,6 @@ package com.idf.demoqa.api;
 import com.idf.demoqa.domain.UserData;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.testng.annotations.Test;
 
 import java.util.ArrayList;
