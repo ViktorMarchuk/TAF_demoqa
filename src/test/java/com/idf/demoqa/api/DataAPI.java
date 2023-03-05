@@ -12,12 +12,10 @@ import java.util.ArrayList;
 import static io.restassured.RestAssured.given;
 
 public class DataAPI{
-    private final static Logger LOGGER = LogManager.getLogger();
     @Test
     public ArrayList <String> getJson(){
         ArrayList <String> list = new ArrayList <>();
         Response res = given().when().get(UserData.URL_API);
-        LOGGER.error(UserData.URL_API + " not found");
         JsonPath jsonPath = new JsonPath(res.asString());
         String title1 = jsonPath.getString("books[0].title");
         String title2 = jsonPath.getString("books[1].title");

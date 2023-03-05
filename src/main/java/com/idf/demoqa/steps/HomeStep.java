@@ -14,7 +14,11 @@ public class HomeStep extends HomePage{
     }
 
     public void actionOnHomePage(){
-        LOGGER.error(UserData.URL + " not found");
+        try{
+            clickButtonLogin();
+        }catch(Exception e){
+            LOGGER.error(UserData.URL + " not found");
+        }
         clickButtonLogin();
         inputUserName();
         inputPassword();
